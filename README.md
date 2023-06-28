@@ -5,7 +5,7 @@ Pet Adoption API created with Spring Boot as an example in a quickly workshop of
 JpaRepository, Lombok, Validation, UriComponentsBuilder, DTO Concept, Record class
 
 ### New annotations: 
-@Slf4j, @RequiredArgsConstructor, @NotNull and @NotBlank validations
+@Slf4j, @RequiredArgsConstructor, @NotNull and @NotBlank validations (should use @Valid in the method's parameter)
 
 ## Difficulty
 Building the project with Gradle... The first time I ran the code, it returned: "adopet does not contain a Gradle build".
