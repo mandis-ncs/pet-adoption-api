@@ -6,3 +6,7 @@ JpaRepository, Lombok, Validation, UriComponentsBuilder, DTO Concept, Record cla
 
 ### New annotations: 
 @Slf4j, @RequiredArgsConstructor, @NotNull and @NotBlank validations
+
+## Difficulty
+Building the project with Gradle... The first time I ran the code, it returned: "adopet does not contain a Gradle build".
+To resolve this, I opened the Gradle menu in the right sidebar (near the Maven menu), chose "Execute Gradle Task", and added "gradle.init" and "build.gradle". After that, I reloaded the main file.
