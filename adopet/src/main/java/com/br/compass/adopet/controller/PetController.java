@@ -27,7 +27,7 @@ public class PetController {
     //UriComponentsBuilder builder - constroi url
     //uri retorna /pet/{path variable}
     @PostMapping
-    public ResponseEntity<PetResponseDto> postPet(@RequestBody PetRequestDto requestDto, UriComponentsBuilder builder){
+    public ResponseEntity<PetResponseDto> postPet(@RequestBody @Valid PetRequestDto requestDto, UriComponentsBuilder builder){
         var response = service.postPet(requestDto);
         var uri = builder.path("/pet/{id}").buildAndExpand(response.id()).toUri();
         return ResponseEntity.created(uri).body(response);
